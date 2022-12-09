@@ -11,7 +11,7 @@ public class test {
         five.times(2);
         assertEquals(10, five.amount);
         five.times(3);
-        assertEquals(30, five.amount);
+        assertEquals(15, five.amount);
     }
 
 }
