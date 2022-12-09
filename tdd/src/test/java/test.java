@@ -1,5 +1,6 @@
 import com.example.tdd.Dollar;
 import com.example.tdd.Franc;
+import com.example.tdd.Money;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,18 +9,24 @@ public class test {
     @Test
     public void testMultiplication()
     {
-        Dollar five = new Dollar(5);
+        Money five = Money.dollar(5);
         assertEquals(new Dollar(10), five.times(2));
         assertEquals(new Dollar(15), five.times(3));
     }
     @Test
     public void testEquality()
     {
-        assertTrue(new Dollar(5).equals(new Dollar(5)));
-        assertFalse(new Dollar(5).equals(new Dollar(6)));
+        assertTrue(Money.dollar((5).equals(Money.dollar(5))));
+        assertFalse(Money.dollar((6).equals(Money.dollar(5))));
         assertTrue(new Franc(5).equals(new Franc(5)));
         assertFalse(new Franc(5).equals(new Franc(6)));
         assertFalse(new Franc(5).equals(new Dollar(6)));
     }
-
+    @Test
+    public void testFrancMultiplication()
+    {
+        Money five = Money.franc(5);
+        assertEquals(new Dollar(10), five.times(2));
+        assertEquals(new Dollar(15), five.times(3));
+    }
 }

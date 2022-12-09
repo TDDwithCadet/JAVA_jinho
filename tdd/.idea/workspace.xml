@@ -70,7 +70,7 @@
       <recent name="com.example.tdd" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.test.testEquality">
+  <component name="RunManager" selected="Gradle.test.testMultiplication">
     <configuration name="test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.test.testEquality" />
         <item itemvalue="Gradle.test.testMultiplication" />
+        <item itemvalue="Gradle.test.testEquality" />
         <item itemvalue="Gradle.test" />
       </list>
     </recent_temporary>
