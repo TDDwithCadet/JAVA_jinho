@@ -1,7 +1,7 @@
 import com.example.tdd.Dollar;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class test {
     @Test
@@ -12,6 +12,13 @@ public class test {
         assertEquals(10, five.amount);
         five.times(3);
         assertEquals(15, five.amount);
+    }
+
+    @Test
+    public void testEquality()
+    {
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
+        assertFalse(new Dollar(5).equals(new Dollar(6)));
     }
 
 }
