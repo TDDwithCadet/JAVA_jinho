@@ -65,6 +65,11 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.tdd" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.test.testMultiplication">
     <configuration name="test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
