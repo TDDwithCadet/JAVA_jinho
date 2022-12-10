@@ -11,11 +11,6 @@ public class Dollar extends Money
         return new Dollar(amount * multiplier, "USD");
     }
 
-    Money times(int amount)
-    {
-        return null;
-    }
-
     String currency()
     {
         return currency;
