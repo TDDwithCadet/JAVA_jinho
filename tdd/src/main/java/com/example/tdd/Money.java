@@ -26,6 +26,11 @@ abstract public class Money
     }
     abstract public Money times(int multiplier);
 
+    Expression times(int multiplier)
+    {
+        return new Money(amount * multiplier, currency);
+    }
+
     abstract String currency();
 
     public Money plus(Money addend)
@@ -41,9 +46,10 @@ abstract public class Money
         return new Money(amount / rate, to);
     }
 
-    Expression plus(Money addend)
+    public Expression plus(Expression addend)
     {
-        return new Money(amount + added.amount, currency);
+//        return new Sum(this, addend);
+        return null;
     }
 
 }
